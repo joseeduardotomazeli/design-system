@@ -1,0 +1,18 @@
+{
+  "name": "@design-system/react",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "build": "tsup src/index.ts --format esm,cjs --dts"
+  },
+  "devDependencies": {
+    "@design-system/eslint-config": "*",
+    "@design-system/tokens": "*",
+    "@design-system/ts-config": "*",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  }
+}
