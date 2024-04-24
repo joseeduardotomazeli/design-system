@@ -1,6 +1,6 @@
 export * from './colors'
 
-export * from './spaces'
+export * from './space'
 export * from './radii'
 
 export * from './fonts'
