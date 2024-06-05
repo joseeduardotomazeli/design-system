@@ -1,6 +1,6 @@
 {
-  "name": "@design-system/tokens",
-  "version": "1.0.0",
+  "name": "@my-ds/tokens",
+  "version": "2.0.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -9,8 +9,8 @@
     "build": "tsup src/index.ts --format esm,cjs --dts"
   },
   "devDependencies": {
-    "@design-system/eslint-config": "*",
-    "@design-system/ts-config": "*",
+    "@my-ds/eslint-config": "*",
+    "@my-ds/ts-config": "*",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5"
   }

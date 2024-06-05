@@ -7,7 +7,7 @@ import {
   fontSizes,
   fontWeights,
   lineHeights,
-} from '@design-system/tokens'
+} from '@my-ds/tokens'
 
 export const {
   styled,
