@@ -4,7 +4,17 @@ import { Box, Text, Textarea, TextareaProps } from '@my-ds/react'
 export default {
   title: 'Form/Textarea',
   component: Textarea,
-  args: {},
+  args: {
+    size: 'sm',
+  },
+  argTypes: {
+    size: {
+      control: {
+        type: 'inline-radio',
+      },
+      options: ['sm', 'md'],
+    },
+  },
   decorators: [
     (Story) => {
       return (
@@ -23,6 +33,13 @@ export default {
 export const Primary: StoryObj<TextareaProps> = {
   args: {
     placeholder: 'Description',
+  },
+}
+
+export const Medium: StoryObj<TextareaProps> = {
+  args: {
+    placeholder: 'Description',
+    size: 'md',
   },
 }
 

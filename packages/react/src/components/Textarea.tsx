@@ -3,7 +3,6 @@ import { styled } from '../styles'
 
 export const Textarea = styled('textarea', {
   boxSizing: 'border-box',
-  minHeight: 80,
   padding: '$3 $4',
   border: '2px solid $gray900',
   borderRadius: '$sm',
@@ -13,6 +12,21 @@ export const Textarea = styled('textarea', {
   fontSize: '$sm',
   fontWeight: '$regular',
   resize: 'vertical',
+
+  variants: {
+    size: {
+      sm: {
+        minHeight: 80,
+      },
+      md: {
+        minHeight: 120,
+      },
+    },
+  },
+
+  defaultVariants: {
+    size: 'sm',
+  },
 
   '&:focus': {
     outline: 0,
